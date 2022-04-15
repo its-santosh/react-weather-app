@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input {
+  @apply block w-full text-gray-700 border border-primary 
+bg-white bg-opacity-50 focus:bg-white focus:bg-opacity-50 focus:outline-none
+focus:ring-2 focus:ring-primary shadow-md;
+}
+
+.button {
+  @apply px-4 py-2 font-bold text-white hover:text-white 
+    hover:bg-opacity-50 border border-primary bg-primary rounded
+     text-sm focus:outline-none focus:ring-primary shadow-lg;
+}
+
+.button-disabled {
+  @apply px-4 py-2 font-bold text-white border border-neutral-dark
+    bg-neutral-dark rounded text-sm focus:outline-none focus:ring-primary shadow-lg;
+}
+
+.button-border {
+  @apply flex items-center justify-center font-bold hover:text-white text-primary  
+    border border-primary bg-white hover:bg-primary rounded
+     text-sm focus:outline-none focus:ring-1 focus:ring-primary shadow-lg;
+}
+
+.button-border-disabled {
+  @apply flex items-center justify-center font-bold text-neutral-dark  
+      border-2 border-neutral-dark rounded text-sm focus:outline-none 
+      focus:ring-1 focus:ring-neutral-dark shadow-lg;
+}
+
+.button-focus {
+  @apply flex items-center justify-center font-bold text-white 
+    bg-primary rounded text-sm focus:outline-none focus:ring-1
+    focus:ring-primary shadow-lg;
+}
+
+.weather-sunny {
+  background-image: url(https://assets.msn.com/weathermapdata/1/static/background/v2.0/compactads3/Sunny.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.quote {
+  background-image: url(https://assets.msn.com/weathermapdata/1/static/background/v2.0/compactads3/Sunny.png);
+}
